@@ -15,9 +15,9 @@ export default function Page() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const backgroundImages = [
-    '/placeholder.svg?height=1080&width=1920',
-    '/placeholder.svg?height=1080&width=1920',
-    '/placeholder.svg?height=1080&width=1920'
+    '/tinus-site/src/public/images/cover.jpg',
+    '/tinus-site/src/public/images/gradimage.jpg',
+    
   ]
 
   useEffect(() => {

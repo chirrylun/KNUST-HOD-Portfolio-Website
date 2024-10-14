@@ -16,7 +16,7 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
       <nav className="container mx-auto px-6 py-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <Image src="/placeholder.svg?height=50&width=50" alt="Logo" width={50} height={50} className="rounded-full" />
+          <Image src="/images/header.png" alt="Logo" width={50} height={50} className="rounded-full" />
             <h2 className="ml-3 text-xl font-semibold text-gray-800">Prof. Atinuke Adebanji</h2>
           </div>
           <div className="hidden md:flex space-x-4">

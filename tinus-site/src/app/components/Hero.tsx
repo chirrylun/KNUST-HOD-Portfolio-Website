@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
         >
           <div className="relative">
             <Image
-              src="/placeholder.svg?height=400&width=400"
+              src="/images/cover.jpg"
               alt="Prof. Atinuke Adebanji"
               width={400}
               height={400}
