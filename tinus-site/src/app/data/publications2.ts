@@ -54,17 +54,5 @@ export const publications: Publication[] = [
     title: "Dynamic linear models for policy monitoring: The case of maternal and neonatal mortality in Ghana",
     description: "Socio-Economic Planning Sciences, Elsevier, 83(101348), ISSN: 0038-0121.",
     link: "https://doi.org/10.1016/j.seps.2022.101348"
-  },
-  {
-    authors: "Butakor P., Guo Q. & Adebanji A. O. (2020)",
-    title: "Using structural equation modelling to examine the relationship between Ghanaian teachers' emotional intelligence, job satisfaction, professional identity, and work engagement",
-    description: "Psychology in the Schools, Wiley Online, 58(3), pp. 534-552.",
-    link: "https://onlinelibrary.wiley.com/doi/10.1002/pits.22462"
-  },
-  {
-    authors: "Adebanji A. O., Achia T., N’getich R., Owino J. & Wangombe A. (2008)",
-    title: "Spatial Durbin Model for Poverty Mapping and Analysis.",
-    description: "European Journal for Social Sciences; 5(4), pp. 195-205.",
-    link: "https://api.semanticscholar.org/CorpusID:157618471"
   }
 ];

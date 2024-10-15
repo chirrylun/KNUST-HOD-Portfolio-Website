@@ -50,7 +50,7 @@ const Contact: React.FC = () => {
                 <ArrowRight className="ml-2 h-5 w-5 opacity-0 group-hover:opacity-100 transition-opacity" />
               </Link>
               <Link
-                href="/contact"
+                href="/contactus"
                 className="inline-flex items-center bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-secondary/90 transition-colors group"
               >
                 <Mail className="mr-2 h-5 w-5 group-hover:animate-pulse" />
