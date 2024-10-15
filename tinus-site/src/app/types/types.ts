@@ -10,4 +10,5 @@ export type Publication = {
     subtitle: string
     description: string
     link: string
+    imagePath: string
   }

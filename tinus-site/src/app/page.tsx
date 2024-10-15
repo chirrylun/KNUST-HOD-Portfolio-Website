@@ -9,7 +9,8 @@ import OtherEngagements from './components/OtherEngagements'
 import Publications from './components/Publications'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import { Publication, Event } from './types/types'
+
+import { Event } from './types/types'
 
 export default function Page() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -27,30 +28,15 @@ export default function Page() {
     return () => clearInterval(interval)
   }, [])
 
-  const publications: Publication[] = [
-    // ... (publication data)
-  ]
+ 
 
   const events: Event[] = [
     // ... (event data)
   ]
 
   return (
-    <div className="relative min-h-screen bg-gray-100">
-      {/* Background images */}
-      <div className="absolute inset-0 z-0">
-        {backgroundImages.map((image, index) => (
-          <div
-            key={index}
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage: `url(${image})`,
-              opacity: currentImageIndex === index ? 1 : 0,
-              transition: 'opacity 1s'
-            }}
-          />
-        ))}
-      </div>
+    <div className="relative min-h-screen  bg-gray-100">
+      
       <div className="relative z-10">
         <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
         <main>
@@ -59,7 +45,7 @@ export default function Page() {
           <About />
           <Quote />
           <OtherEngagements events={events} />
-          <Publications publications={publications} />
+          <Publications/>
           <Contact />
         </main>
         <Footer />

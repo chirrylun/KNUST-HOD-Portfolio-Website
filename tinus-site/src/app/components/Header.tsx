@@ -12,11 +12,11 @@ type HeaderProps = {
 
 const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
   return (
-    <header className="bg-white/80 backdrop-blur-md sticky top-0">
+    <header className="bg-white/80 z-50 backdrop-blur-md sticky top-0">
       <nav className="container mx-auto px-6 py-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-          <Image src="/tinus-site/src/public/images/header.png" alt="Logo" width={50} height={50} className="rounded-full" />
+          <Image src="/images/header.png" alt="Logo" width={50} height={50} className="rounded-full" />
             <h2 className="ml-3 text-xl font-semibold text-gray-800">Prof. Atinuke Adebanji</h2>
           </div>
           <div className="hidden md:flex space-x-4">
