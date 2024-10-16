@@ -74,10 +74,10 @@ const FeaturedVideo: React.FC = () => {
                     >
                       <Play className="h-12 w-12 sm:h-20 sm:w-20" />
                     </motion.button>
-                    <h3 className="text-xl sm:text-3xl font-bold text-white mb-2">
+                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
                       2024 KNUST Professional Inaugural Lecture
                     </h3>
-                    <p className="text-lg sm:text-xl text-white/90 mb-2 sm:mb-4">
+                    <p className="text-lg sm:text-xl hidden md:flex text-white/90 mb-2 sm:mb-4">
                       A Journey in Statistical Inquisition
                     </p>
                     <p className="text-base sm:text-lg text-white font-semibold">
