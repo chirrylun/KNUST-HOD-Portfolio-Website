@@ -67,12 +67,12 @@ const FeaturedVideo: React.FC = () => {
                     transition={{ duration: 0.5, delay: 0.2 }}
                   >
                     <motion.button
-                      className="bg-white/90 backdrop-blur-md p-4 sm:p-6 rounded-full text-primary hover:text-secondary transition-colors mb-4 sm:mb-6"
+                      className="bg-white/90 backdrop-blur-md p-4 md:p-4 rounded-full text-primary hover:text-secondary transition-colors mb-4 sm:mb-6"
                       onClick={() => setShowVideo(true)}
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
                     >
-                      <Play className="h-12 w-12 sm:h-20 sm:w-20" />
+                      <Play className="h-6 w-6 md:h-12 md:w-12" />
                     </motion.button>
                     <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
                       2024 KNUST Professional Inaugural Lecture
