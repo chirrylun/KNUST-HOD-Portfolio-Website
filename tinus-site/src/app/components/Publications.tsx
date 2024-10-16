@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
 import Image from 'next/image'
-import { ChevronRight, ArrowRight, ArrowLeft, BookOpen, Calendar, Users } from 'lucide-react'
+import { ChevronRight, ArrowRight, ArrowLeft, BookOpen, Users } from 'lucide-react'
 import { publications } from '../data/publications'
 import { Publication } from '../types/types'
 
