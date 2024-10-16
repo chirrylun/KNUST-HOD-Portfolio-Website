@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
             </p>
             <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-4 mb-6 text-center">
               <Link
-                href="https://drive.google.com/file/d/12sBCl40lZpTffq8j6XobRbzx4g5u8q2G/view?usp=sharing"
+                href="https://docs.google.com/document/d/e/2PACX-1vQfjaQJIFEPoKwWEA8Aptp5sCUFyDwCGEJf1WK0IMfX3BeCw3_jSu2NpJLKNdoO_OtthlbWBbbzjbGm/pub"
                 className="inline-block bg-white bg-opacity-15 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
               >
                 View My Resume

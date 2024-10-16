@@ -59,8 +59,8 @@ const About: React.FC = () => {
                   <p className="text-lg text-gray-700">Published Research Papers</p>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-primary opacity-50  rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">100+</div>
-                  <p className="text-lg text-gray-700">International Conference Presentations</p>
+                  <div className="w-12 h-12 bg-primary opacity-50  rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">12+</div>
+                  <p className="text-lg text-gray-700">International Academic Research Participation</p>
                 </div>
               </div>
             </motion.div>
