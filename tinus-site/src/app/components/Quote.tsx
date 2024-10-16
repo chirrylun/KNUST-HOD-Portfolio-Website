@@ -23,7 +23,7 @@ const Quote: React.FC = () => {
             <blockquote className="text-2xl md:text-3xl font-serif italic text-gray-800 mb-8 leading-relaxed">
               "Teaching, to me, is not just a profession; it's a profound opportunity to ignite curiosity, empower critical thinking, and inspire a lifelong passion for statistical knowledge. I understand that statistics can appear formidable with its complex mathematical aspects, but I firmly believe that it is an indispensable tool for nurturing analytical minds."
             </blockquote>
-            <div className="flex items-center justify-between">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center justify-between">
               <div>
                 <p className="text-xl font-semibold text-gray-900">Prof. Atinuke Olusola Adebanji</p>
                 <p className="text-gray-600">Statistics and Biostatistics Expert</p>

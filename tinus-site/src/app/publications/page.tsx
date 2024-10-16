@@ -138,9 +138,9 @@ const PublicationsPage: React.FC = () => {
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-200 relative overflow-hidden">
+    <div className="min-h-screen bg-gray-100">
       <div className="absolute inset-0 bg-opacity-50 z-0">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-black/10 rounded-full -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute top-0 left-0 w-96 h-96 bg-primary/10 rounded-full -translate-x-1/2 -translate-y-1/2" />
         <div className="absolute bottom-0 right-0 w-128 h-128 bg-secondary/10 rounded-full translate-x-1/3 translate-y-1/3" />
         <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-accent/10 rounded-full -translate-x-1/2 -translate-y-1/2" />
       </div>
@@ -200,7 +200,7 @@ const PublicationsPage: React.FC = () => {
               <motion.button
                 onClick={() => paginate(currentPage - 1)}
                 disabled={currentPage === 1}
-                className="bg-black text-white px-6 py-3 rounded-lg disabled:opacity-50 flex items-center"
+                className="bg-primary text-white px-6 py-3 rounded-lg disabled:opacity-50 flex items-center"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -209,7 +209,7 @@ const PublicationsPage: React.FC = () => {
               <motion.button
                 onClick={() => paginate(currentPage + 1)}
                 disabled={indexOfLastPublication >= publications.length}
-                className="bg-black text-white px-6 py-3 rounded-lg disabled:opacity-50 flex items-center"
+                className="bg-primary text-white px-6 py-3 rounded-lg disabled:opacity-50 flex items-center"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

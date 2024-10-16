@@ -14,25 +14,11 @@ import { Event } from './types/types'
 
 export default function Page() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [currentImageIndex, setCurrentImageIndex] = useState(0)
-  const backgroundImages = [
-    '/tinus-site/src/public/images/cover.jpg',
-    '/tinus-site/src/public/images/gradimage.jpg',
-    
-  ]
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length)
-    }, 5000)
-    return () => clearInterval(interval)
-  }, [])
+  
 
  
 
-  const events: Event[] = [
-    // ... (event data)
-  ]
+  
 
   return (
     <div className="relative min-h-screen  bg-gray-100">
@@ -44,7 +30,7 @@ export default function Page() {
           <FeaturedVideo />
           <About />
           <Quote />
-          <OtherEngagements events={events} />
+          <OtherEngagements/>
           <Publications/>
           <Contact />
         </main>

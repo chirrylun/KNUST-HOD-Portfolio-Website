@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
         >
           <div className="p-12 text-center">
             <motion.h2 
-              className="text-4xl font-bold mb-4 text-gray-800"
+              className="text-4xl font-bold mb-4 text-primary"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -43,7 +43,7 @@ const Contact: React.FC = () => {
             >
               <Link
                 href="https://drive.google.com/file/d/12sBCl40lZpTffq8j6XobRbzx4g5u8q2G/view?usp=sharing"
-                className="inline-flex items-center bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors group"
+                className="inline-flex items-center bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors group"
               >
                 <FileText className="mr-2 h-5 w-5 group-hover:animate-pulse" />
                 View Resume
@@ -51,7 +51,7 @@ const Contact: React.FC = () => {
               </Link>
               <Link
                 href="/contactus"
-                className="inline-flex items-center bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-secondary/90 transition-colors group"
+                className="inline-flex items-center bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-secondary/90 transition-colors group"
               >
                 <Mail className="mr-2 h-5 w-5 group-hover:animate-pulse" />
                 Get in Touch

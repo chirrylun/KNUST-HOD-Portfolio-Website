@@ -6,7 +6,7 @@ export const events: Event[] = [
         subtitle: "International Women's Day",
         description: "Ensuring today's technology benefits all girls and women.",
         imagePath: "/images/wakanda.jpg",
-        link: "events.html"
+        link: "/events"
     },
     {
         title: "USAID",
@@ -20,6 +20,6 @@ export const events: Event[] = [
         subtitle: "Keynote Speaker",
         description: "Impact of Socio-Economic policies on trade and industry in developing countries.",
         imagePath: "/images/fef.jpg",
-        link: "events.html"
+        link: "/events"
     }
 ];

@@ -27,31 +27,31 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
               height={50}
               className="rounded-full"
             />
-            <h2 className="ml-3 text-xl font-semibold text-gray-800">
+            <h2 className="ml-3 text-xl font-semibold text-primary">
               Prof. Atinuke Adebanji
             </h2>
           </div>
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-24">
             <div className="flex items-center gap-2">
-              <CgProfile size={20} />
+              <CgProfile size={20} className="text-primary"/>
               <NavLink href="/" isActive>
                 My Bio
               </NavLink>
             </div>
             <div className="flex items-center gap-2">
-              <IoBookOutline size={20} />
+              <IoBookOutline size={20} className="text-primary"/>
               <NavLink href="/publications" isActive>
                 My Publications
               </NavLink>
             </div>
             <div className="flex items-center gap-2">
-              <BsFillCameraReelsFill size={20} />
+              <BsFillCameraReelsFill size={20} className="text-primary"/>
               <NavLink href="/events" isActive>
                 Programs & Events
               </NavLink>
             </div>
             <div className="flex items-center gap-2">
-              <FaPhoneAlt size={20} />
+              <FaPhoneAlt size={20} className="text-primary" />
               <NavLink href="/contactus" isActive>
                 Get in Touch
               </NavLink>
@@ -80,29 +80,29 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
           >
             <div className="p-6">
               <button className="mb-6" onClick={() => setIsMenuOpen(false)}>
-                <X className="h-6 w-6 text-gray-800" />
+                <X className="h-6 w-6 text-primary" />
               </button>
               <div className="flex flex-col gap-6 text-gray-800">
                 <div className="flex items-center gap-2">
-                  <CgProfile size={20} />
+                  <CgProfile size={20}  className="text-primary" />
                   <NavLink href="/" isActive>
                     My Bio
                   </NavLink>
                 </div>
                 <div className="flex items-center gap-2">
-                  <IoBookOutline size={20} />
+                  <IoBookOutline size={20}  className="text-primary" />
                   <NavLink href="/publications" isActive>
                     My Publications
                   </NavLink>
                 </div>
                 <div className="flex items-center gap-2">
-                  <BsFillCameraReelsFill size={20} />
+                  <BsFillCameraReelsFill size={20}  className="text-primary" />
                   <NavLink href="/events" isActive>
                     Programs & Events
                   </NavLink>
                 </div>
                 <div className="flex items-center gap-2">
-                  <FaPhoneAlt size={20} />
+                  <FaPhoneAlt size={20}  className="text-primary" />
                   <NavLink href="/contactus" isActive>
                     Get in Touch
                   </NavLink>

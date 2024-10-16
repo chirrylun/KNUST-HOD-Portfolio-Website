@@ -1,11 +1,12 @@
 'use client'
 
 import React, { useState } from 'react'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
 import { ChevronDown, ChevronUp, Award, BookOpen, Calendar, FlaskConical, Gift, Briefcase } from 'lucide-react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Contact from '../components/Contact'
 
 interface Event {
   title: string
@@ -20,39 +21,75 @@ interface EventSectionProps {
   icon: React.ReactNode
 }
 
+const EventCard: React.FC<{ event: Event; index: number }> = ({ event, index }) => (
+  <motion.div
+    className="bg-white rounded-lg shadow-lg overflow-hidden"
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5, delay: index * 0.1 }}
+  >
+    <div className="p-6 relative">
+      
+      <div className="relative z-10">
+        <h3 className="font-semibold text-primary text-lg mb-2">{event.title}</h3>
+        {event.description && <p className="text-gray-600 mb-2">{event.description}</p>}
+        <ul className="list-disc list-inside text-sm text-gray-500">
+          {event.details.map((detail, detailIndex) => (
+            <li key={detailIndex}>{detail}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </motion.div>
+)
+
 const EventSection: React.FC<EventSectionProps> = ({ title, events, image, icon }) => {
   const [isExpanded, setIsExpanded] = useState(false)
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-center mb-8">
-          {icon}
-          <h2 className="text-3xl font-bold text-gray-800 ml-4">{title}</h2>
-        </div>
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          <div className="relative h-64 md:h-full">
-            <Image src={image} alt={title} layout="fill" objectFit="cover" className="rounded-lg" />
+        <motion.div 
+          className="flex items-center justify-center mb-12"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <div className="bg-white p-3 rounded-full shadow-md mr-4">
+            {icon}
           </div>
+          <h2 className="text-3xl font-bold text-gray-800">{title}</h2>
+        </motion.div>
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <motion.div 
+            className="relative h-96 lg:h-full rounded-lg overflow-hidden shadow-xl"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <Image src={image} alt={title} layout="fill" objectFit="cover" />
+          </motion.div>
           <div>
-            <ul className="space-y-4">
-              {events.slice(0, isExpanded ? events.length : 3).map((event, index) => (
-                <li key={index} className="bg-gray-100 p-4 rounded-lg">
-                  <h3 className="font-semibold text-lg mb-2">{event.title}</h3>
-                  {event.description && <p className="text-gray-600 mb-2">{event.description}</p>}
-                  <ul className="list-disc list-inside text-sm text-gray-500">
-                    {event.details.map((detail, detailIndex) => (
-                      <li key={detailIndex}>{detail}</li>
-                    ))}
-                  </ul>
-                </li>
-              ))}
-            </ul>
+            <AnimatePresence>
+              <motion.div
+                key={isExpanded ? 'expanded' : 'collapsed'}
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: 'auto' }}
+                exit={{ opacity: 0, height: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                <div className="grid gap-6">
+                  {events.slice(0, isExpanded ? events.length : 3).map((event, index) => (
+                    <EventCard key={index} event={event} index={index} />
+                  ))}
+                </div>
+              </motion.div>
+            </AnimatePresence>
             {events.length > 3 && (
               <motion.button
-                className="mt-6 flex items-center text-primary font-semibold"
+                className="mt-8 flex items-center justify-center w-full bg-primary text-white py-3 px-6 rounded-md font-semibold hover:bg-primary-dark transition-colors"
                 onClick={() => setIsExpanded(!isExpanded)}
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 0.98 }}
                 whileTap={{ scale: 0.95 }}
               >
                 {isExpanded ? (
@@ -74,9 +111,9 @@ const EventSection: React.FC<EventSectionProps> = ({ title, events, image, icon 
 }
 
 const EventsPage: React.FC = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-100">
       <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <main>
         <EventSection
@@ -116,6 +153,7 @@ const EventsPage: React.FC = () => {
           icon={<Briefcase className="h-8 w-8 text-primary" />}
         />
       </main>
+      <Contact/>
       <Footer />
     </div>
   )

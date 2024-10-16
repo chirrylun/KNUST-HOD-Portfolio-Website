@@ -56,10 +56,10 @@ const Hero: React.FC = () => {
                 View My Resume
               </Link>
               <Link
-                href="#"
-                className="inline-block bg-white bg-opacity-15 text-white px-6 py-3 rounded-lg font-semibold hover:bg-secondary/90 transition-colors"
+                href="https://webapps.knust.edu.gh/staff/dirsearch/profile/summary/bc635c81f607.html"
+                className="flex bg-white bg-opacity-15 text-white px-6 py-3 rounded-lg font-semibold items-center justify-center transition-colors"
               >
-                View My Profile
+                View My KNUST Profile <ExternalLink className="ml-2 h-4 w-4" />
               </Link>
             </div>
             <div className="flex justify-center md:justify-start space-x-4 mb-6">
@@ -78,7 +78,7 @@ const Hero: React.FC = () => {
             </div>
           </motion.div>
           <motion.div
-            className="md:w-1/2 mt-8 md:mt-0"
+            className="w-full md:w-1/2 mt-8 md:mt-0"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
@@ -108,14 +108,7 @@ const Hero: React.FC = () => {
                 </div>
               </div>
 
-              <Link
-                href="https://webapps.knust.edu.gh/staff/dirsearch/profile/summary/bc635c81f607.html"
-                className="inline-flex font-bold items-center text-primary hover:text-primary/80 transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                My KNUST Profile <ExternalLink className="ml-2 h-4 w-4" />
-              </Link>
+              
             </div>
           </motion.div>
         </div>

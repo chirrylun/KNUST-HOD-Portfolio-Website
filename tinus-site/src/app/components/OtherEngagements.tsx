@@ -13,7 +13,7 @@ const OtherEngagements: React.FC = () => {
     <section className="py-24 bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="container mx-auto px-6">
         <motion.h2 
-          className="text-4xl font-bold text-center mb-4"
+          className="text-4xl text-primary font-bold text-center mb-4"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
