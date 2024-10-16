@@ -106,13 +106,13 @@ const EventsPage: React.FC = () => {
         <EventSection
           title="Grants"
           events={grants}
-          image="/images/grants.jpg"
+          image="/images/grant.jpg"
           icon={<Gift className="h-8 w-8 text-primary" />}
         />
         <EventSection
           title="Projects"
           events={projects}
-          image="/images/projects-bg.jpg"
+          image="/images/event1.jpg"
           icon={<Briefcase className="h-8 w-8 text-primary" />}
         />
       </main>
