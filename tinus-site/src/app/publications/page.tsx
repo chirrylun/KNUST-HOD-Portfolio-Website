@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Contact from "../components/Contact";
 import {
   ChevronRight,
   ArrowRight,
@@ -135,7 +136,7 @@ const PublicationsPage: React.FC = () => {
   );
 
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
-
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-200 relative overflow-hidden">
       <div className="absolute inset-0 bg-opacity-50 z-0">
@@ -143,7 +144,7 @@ const PublicationsPage: React.FC = () => {
         <div className="absolute bottom-0 right-0 w-128 h-128 bg-secondary/10 rounded-full translate-x-1/3 translate-y-1/3" />
         <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-accent/10 rounded-full -translate-x-1/2 -translate-y-1/2" />
       </div>
-      <Header />
+      <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <main className="container mx-auto px-4 py-12 relative z-10">
         <motion.h1
           className="text-5xl font-bold text-center mb-12 text-gray-800"
@@ -217,6 +218,7 @@ const PublicationsPage: React.FC = () => {
             </div>
           </div>
           <OtherEngagements />
+          <Contact/>
         </div>
       </main>
       <Footer />
