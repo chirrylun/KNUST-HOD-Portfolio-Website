@@ -14,8 +14,15 @@ import {
   FileText,
 } from "lucide-react";
 import { publications } from "../data/publications";
+import { Publication } from "../types/types";
 
-const PublicationCard: React.FC<{ publication: any }> = ({ publication }) => (
+
+
+interface PublicationCardProps {
+  publication: Publication;
+}
+
+const PublicationCard: React.FC<PublicationCardProps> = ({ publication }) => (
   <motion.div
     className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
     initial={{ opacity: 0, y: 20 }}
@@ -23,10 +30,7 @@ const PublicationCard: React.FC<{ publication: any }> = ({ publication }) => (
     transition={{ duration: 0.5 }}
   >
     <div className="p-6">
-      <div className="flex items-center mb-4">
-        <Book className="h-6 w-6 text-primary mr-2" />
-        <p className="text-sm text-gray-500">{publication.year}</p>
-      </div>
+    
       <h3 className="text-xl font-bold mb-2 line-clamp-2">
         {publication.title}
       </h3>
@@ -101,7 +105,6 @@ const OtherEngagements: React.FC = () => (
           </a>
         </div>
         <div>
-
           <p className="text-gray-600 mb-2">KNUST Academia Publications</p>
           <a
             href="https://knust.academia.edu/AtinukeOAdebanji"
@@ -111,7 +114,6 @@ const OtherEngagements: React.FC = () => (
           </a>
         </div>
         <div>
-
           <p className="text-gray-600 mb-2">More Publications</p>
           <a
             href="https://docs.google.com/document/d/e/2PACX-1vS4m4pme47iImfci-_RSb06vqrj-1fS6LoGF0SXYUi0W5N1ltAEJQuXvU4wtptNqQ/pub"
@@ -136,7 +138,8 @@ const PublicationsPage: React.FC = () => {
   );
 
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-gray-100">
       <div className="absolute inset-0 bg-opacity-50 z-0">

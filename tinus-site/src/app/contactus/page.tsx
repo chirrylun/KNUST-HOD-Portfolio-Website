@@ -34,8 +34,12 @@ const ContactPage: React.FC = () => {
                   <a href="tel:+233123456789" className="text-gray-600 hover:text-primary">+233 123 456 789</a>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <MapPin className="text-primary h-6 w-6" />
+                  <MapPin className="text-primary " size={20} />
                   <span className="text-gray-600">Department of Mathematics, KNUST, Kumasi, Ghana</span>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <MapPin className="text-primary " size={20}/>
+                  <span className="text-gray-600">Department of Statistics, Cockins Hall, Ohio State University, 2009 Millin Rd, Columbus, OH 43210-1243</span>
                 </div>
               </div>
               <div className="mt-8">
@@ -64,7 +68,7 @@ const ContactPage: React.FC = () => {
         </motion.div>
 
         <motion.div 
-          className="mt-12 bg-white rounded-lg shadow-lg p-8"
+          className="mt-12 bg-white rounded-lg hidden shadow-lg p-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}

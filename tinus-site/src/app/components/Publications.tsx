@@ -6,8 +6,16 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { ChevronRight, ArrowRight, ArrowLeft, BookOpen, Calendar, Users } from 'lucide-react'
 import { publications } from '../data/publications'
+import { Publication } from '../types/types'
 
-const PublicationCard: React.FC<{ publication: any; index: number }> = ({ publication, index }) => (
+
+
+interface PublicationCardProps {
+  publication: Publication;
+  index: number;
+}
+
+const PublicationCard: React.FC<PublicationCardProps> = ({ publication, index }) => (
   <motion.div
     className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105"
     initial={{ opacity: 0, y: 20 }}
@@ -19,17 +27,14 @@ const PublicationCard: React.FC<{ publication: any; index: number }> = ({ public
       <div className="relative z-10">
         <div className="flex items-center mb-4 text-primary">
           <BookOpen className="h-6 w-6 mr-2" />
-          <p className="text-sm font-semibold">{publication.type}</p>
+          
         </div>
         <h3 className="text-lg font-bold mb-2 line-clamp-2">{publication.title}</h3>
         <div className="flex items-center mb-2 text-gray-600">
           <Users className="h-4 w-4 mr-2" />
           <p className="text-sm line-clamp-1">{publication.authors}</p>
         </div>
-        <div className="flex items-center mb-4 text-gray-500">
-          <Calendar className="h-4 w-4 mr-2" />
-          <p className="text-sm">{publication.year}</p>
-        </div>
+        
         <p className="text-sm text-gray-600 mb-4 line-clamp-2">{publication.description}</p>
         <a
           href={publication.link}
@@ -45,10 +50,9 @@ const PublicationCard: React.FC<{ publication: any; index: number }> = ({ public
 )
 
 const Publications: React.FC = () => {
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState<number>(0)
   const itemsPerPage = 4
-  const totalPages = Math.ceil(publications.length / itemsPerPage)
-
+  
   const nextPage = () => {
     setCurrentIndex((prevIndex) => 
       prevIndex + itemsPerPage >= publications.length ? 0 : prevIndex + itemsPerPage
