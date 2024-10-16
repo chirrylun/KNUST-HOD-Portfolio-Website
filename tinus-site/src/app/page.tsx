@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import FeaturedVideo from './components/FeaturedVideo'
@@ -9,8 +9,6 @@ import OtherEngagements from './components/OtherEngagements'
 import Publications from './components/Publications'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-
-import { Event } from './types/types'
 
 export default function Page() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

@@ -5,7 +5,6 @@ import { CgProfile } from "react-icons/cg";
 import { BsFillCameraReelsFill } from "react-icons/bs";
 import { IoBookOutline } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
-import Link from "next/link";
 import Image from "next/image";
 import NavLink from "./NavLink";
 

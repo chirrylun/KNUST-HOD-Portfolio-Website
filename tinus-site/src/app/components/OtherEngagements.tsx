@@ -5,7 +5,6 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import Image from 'next/image'
 import { ChevronRight } from 'lucide-react'
-import { Event } from '../types/types'
 import { events } from '../data/events'
 
 const OtherEngagements: React.FC = () => {
