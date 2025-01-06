@@ -78,7 +78,7 @@ const Hero: React.FC = () => {
             </div>
           </motion.div>
           <motion.div
-            className="w-full md:w-1/2 mt-8 md:mt-0"
+            className="w-full hidden md:w-1/2 mt-8 md:mt-0"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
