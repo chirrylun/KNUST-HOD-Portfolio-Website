@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
               Prof. Atinuke Olusola Adebanji
             </h1>
             <p className="text-xl mb-6">
-              A Seasoned Statistics and Biostatistics Expert
+              A Seasoned Multidisciplinary Statistician and Biostatistics Expert
             </p>
             <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-4 mb-6 text-center">
               <Link
