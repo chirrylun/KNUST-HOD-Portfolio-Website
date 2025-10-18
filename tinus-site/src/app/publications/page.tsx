@@ -116,7 +116,7 @@ const OtherEngagements: React.FC = () => (
         <div>
           <p className="text-gray-600 mb-2">More Publications</p>
           <a
-            href="https://docs.google.com/document/d/e/2PACX-1vS4m4pme47iImfci-_RSb06vqrj-1fS6LoGF0SXYUi0W5N1ltAEJQuXvU4wtptNqQ/pub"
+            href="https://docs.google.com/document/d/e/2PACX-1vRQGEcZ-m9QZMvGxWsn4Pb5pOR1UlWZEX54LpyEmJK4HLNL6YcZPJfuFPdXOW0K1GQn9reZh_c8AXc0/pub"
             className="text-primary hover:underline inline-flex items-center"
           >
             Read <ChevronRight className="ml-1 h-4 w-4" />

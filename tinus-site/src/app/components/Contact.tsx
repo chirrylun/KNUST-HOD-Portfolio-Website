@@ -42,7 +42,7 @@ const Contact: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
             >
               <Link
-                href="https://docs.google.com/document/d/e/2PACX-1vQfjaQJIFEPoKwWEA8Aptp5sCUFyDwCGEJf1WK0IMfX3BeCw3_jSu2NpJLKNdoO_OtthlbWBbbzjbGm/pub"
+                href="https://docs.google.com/document/d/e/2PACX-1vRQGEcZ-m9QZMvGxWsn4Pb5pOR1UlWZEX54LpyEmJK4HLNL6YcZPJfuFPdXOW0K1GQn9reZh_c8AXc0/pub"
                 className="inline-flex items-center bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors group"
               >
                 <FileText className="mr-2 h-5 w-5 group-hover:animate-pulse" />
