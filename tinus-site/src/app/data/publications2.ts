@@ -54,5 +54,71 @@ export const publications: Publication[] = [
     title: "Dynamic linear models for policy monitoring: The case of maternal and neonatal mortality in Ghana",
     description: "Socio-Economic Planning Sciences, Elsevier, 83(101348), ISSN: 0038-0121.",
     link: "https://doi.org/10.1016/j.seps.2022.101348"
-  }
+  },
+  {
+    authors: "Adebanji A., Butakor P., and Guo Q. (2020)",
+    title: "Using structural equation modelling to examine the relationship between Ghanaian teachers’ emotional intelligence, job satisfaction, professional identity, and work engagement",
+    description: "Psychology in the Schools, Wiley Online, (2020)",
+    link: "https://doi.org/10.1002/pits.22462"
+  },
+  {
+    authors: "Adebanji A., Aidoo E. N., Ampofo R. T., Awashie G. E., Appiah S. K. (2021)",
+    title: "Modelling COVID-19 incidence in the African sub-region using smooth transition autoregressive model",
+    description: "Modeling Earth Systems and Environment, Springer (2021)",
+    link: "https://doi.org/10.1007/s40808-021-01136-1"
+  },
+  {
+    authors: "Adebanji A., Asosega K., and Abdul Wahab I. (2021)",
+    title: "Spatial analysis of the prevalence of obesity and overweight among women in Ghana",
+    description: "BMJ Open (2021)",
+    link: "https://bmjopen.bmj. com/content/11/1/e041659"
+  },
+  {
+    authors: "Adebanji A., Ajayi S. A., Adams C. A., Dumedah G., Ababio-Donkor A., and Ackaah W. (2023)",
+    title: "Public perceptions of vehicular traffic emissions on health risk in Lagos metropolis Nigeria: A critical survey",
+    description: "Heliyon (2023)",
+    link: "https://doi.org/10.1016/j.heliyon.2023.e15712"
+  },
+  {
+    authors: "Adebanji A., Ajayi S. A., Adams C. A., Dumedah G., Ababio-Donkor A., Ackaah W., and Kehinde A. (2023)",
+    title: "The impact of traffic mobility measures on vehicle emissions for heterogeneous traffic in Lagos City",
+    description: "Scientific African (2023). Volume 21, e01822, ISSN 2468-2276",
+    link: "https://www.sciencedirect.com/science/article/pii/S2468227623002788"
+  },
+  {
+    authors: "Adebanji A., Alhassan A., Salifu H., (2016)",
+    title: "Discriminant analysis of farmers adoption of improved maize varieties in Wa Municipality, Upper West Region of Ghana",
+    description: "SpringerPlus (2016)",
+    link: "https://www.sciencedirect.com/science/article/pii/S2468227623002788"
+  },
+  {
+    authors: "Adebanji A., Asosega K. A., Aidoo E. N., and Owusu-Daabo E. (2023)",
+    title: "Examining the risk factors for overweight and obesity among women in Ghana: A multilevel perspective",
+    description: "Heliyon 5 (2023). Elsevier 9(5)",
+    link: "https://pubmed.ncbi.nlm.nih.gov/37229171/"
+  },
+  {
+    authors: "Adebanji A., Adeyemi S., and Gyamfi M. (2015)",
+    title: "Empirical Analysis of factors associated with neonatal length of stay in Sunyani, Ghana",
+    description: "Journal of Public Health and Epidemiology (2015). 7(3), pp. 59-64. doi: 10.5897/jphe2014.0679",
+    link: "https://doi.org/10.5897/JPHE2014.0679"
+  },
+  {
+    authors: "Adebanji A., Salako V. K., and Gl`el`e Kakai R. (2013)",
+    title: "On the Empirical Performance of Non-Metric Multidimensional Scaling in Vegetation Studies",
+    description: "International Journal of Applied Mathematics and Statistics (IJAMAS) (2013). 36(6), pp. 54-67",
+    link: "https://www.researchgate.net/publication/233765820_On_the_empirical_performance_of_non-metric_multidimensional_scaling_in_vegetation_studies"
+  },
+  {
+    authors: "Adebanji A., Asosega K. A., Aidoo E. N., and Owusu-Daabo E. (2024)",
+    title: "Application of Hierarchical/Multilevel Models and Quality of Reporting (2010–2020): A Systematic Review",
+    description: "The Scientific World Journal (2024), Article ID 4658333, 9 pages. doi: 10.1155/2024/4658333",
+    link: "https://www.hindawi.com/journals/tswj/2024/ 4658333/"
+  },
+  {
+    authors: "Adebanji A., Aidoo E. N., Ampofo R. T., Awashie G. E., Appiah S. K. (2021).",
+    title: "Modelling COVID-19 incidence in the African sub-region using smooth transition autoregressive model",
+    description: "Modeling Earth Systems and Environment, Springer (2021). , 8, pp. 961–966",
+    link: "https://doi.org/10.1007/s40808-021-01136-1"
+  },
 ];
