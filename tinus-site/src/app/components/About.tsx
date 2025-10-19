@@ -60,7 +60,7 @@ const About: React.FC = () => {
                 </div>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-primary opacity-50  rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">12+</div>
-                  <p className="text-lg text-gray-700">International Academic Research Participation</p>
+                  <p className="text-lg text-gray-700">International Academic Research Participations</p>
                 </div>
               </div>
             </motion.div>
