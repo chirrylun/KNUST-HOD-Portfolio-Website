@@ -163,6 +163,13 @@ export default EventsPage
 
 const fellowshipsAndAwards: Event[] = [
   {
+    title: 'Fellowship of the Ghana Academy of Arts and Sciences',
+    description: 'Member by Election, 2025',
+    details: [
+      'Inducted at the GAAS Auditorium, Casely Hayford Road, Accra',
+    ]
+  },
+  {
     title: 'Member, Governing Council of the International Biometric Society',
     description: 'Ghana Representative',
     details: [

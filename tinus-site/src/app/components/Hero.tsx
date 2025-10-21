@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
               Prof. Atinuke Olusola Adebanji
             </h1>
             <p className="text-xl mb-6">
-              A Seasoned Collaborative Statistician and Biostatistics Expert
+              A Collaborative Statistician and Biostatistics Expert
             </p>
             <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-4 mb-6 text-center">
               <Link
@@ -59,7 +59,7 @@ const Hero: React.FC = () => {
                 href="https://webapps.knust.edu.gh/staff/dirsearch/profile/summary/bc635c81f607.html"
                 className="flex bg-white bg-opacity-15 text-white px-6 py-3 rounded-lg font-semibold items-center justify-center transition-colors"
               >
-                View My KNUST Profile <ExternalLink className="ml-2 h-4 w-4" />
+                View My Profile <ExternalLink className="ml-2 h-4 w-4" />
               </Link>
             </div>
             <div className="flex justify-center md:justify-start space-x-4 mb-6">
